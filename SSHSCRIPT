@@ -34,7 +34,7 @@ Menu() {
     
     4) rm TREESSH; rm inst; wget http://sshplus.xyz/revenda/confpainel/inst > /dev/null 2>&1; bash inst; Menu;;
     
-    5) rm TREESSH; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/tcptweaker.sh; chmod +x tcptweaker.sh; ./tcptweaker.sh; echo "INSTALACAO OK"; Menu;;
+    5) rm TREESSH; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/tcptweaker.sh; chmod +x tcptweaker.sh; ./tcptweaker.sh; Menu;;
     
     6) rm TREESSH; reini;;
     
