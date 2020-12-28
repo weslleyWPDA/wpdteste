@@ -48,7 +48,7 @@ Menu() {
 
 apache2 () {
     clear
-    echo -e " \033[01;32mInstall Reinicio a cada 4 Hrs\033[01;37m"
+    echo -e " \033[01;32mInstall Instalar apache2 e :81\033[01;37m"
     echo -e " \033[01;32m--------------------------------\033[01;37m"
     echo "ESCOLHA ABAIXO"
     echo -e '\n'
