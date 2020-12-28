@@ -10,10 +10,10 @@ Menu() {
     echo -e "                  \033[01;31m======\033[01;37m          "
     echo -e "                    \033[01;31m==\033[01;37m            "
     echo -e "        \033[01;31m_______________by: TREESSH v 1.2\033[01;37m"
-    echo -e "        \033[01;31m______________________Wpda\033[01;37m"
+    echo -e "        \033[01;31m______________________WPDA\033[01;37m"
     echo "                             "
     echo "                             "
-    echo -e "   [ 1 ]  \033[01;32mInstalar Painel Web 20 FREE(DEBIAN 8)\033[01;37m"
+    echo -e "   [ 1 ]  \033[01;32mInstalar Painel Web FREE (DEBIAN 8)\033[01;37m"
     echo -e "   [ 2 ]  \033[01;32mInstalar SSHPLUS MANANGER FREE\033[01;37m"
     echo -e "   [ 3 ]  \033[01;32mINSTALL BKP via link SSHPLUS-MANANGER :81\033[01;37m"
     echo -e "   [ 4 ]  \033[01;32mSinc c/Painel(so na vps SSHPLUS-MAN)\033[01;37m"
@@ -59,7 +59,7 @@ apache2 () {
     echo "                             "
     read opcao
     case $opcao in
-     1) rm TREESSH; apt-get update && apt-get upgrade -y; apt-get install apache2 -y; nano /etc/apache2/ports.conf; Menu;;
+     1) rm SSHSCRIPT; apt-get update && apt-get upgrade -y; apt-get install apache2 -y; nano /etc/apache2/ports.conf; Menu;;
     2) Voltar ;;
     *) "Comando desconhecido" ; echo ; Opcao1 ;;
     esac
@@ -78,7 +78,7 @@ reini () {
     echo "                             "
     read opcao
     case $opcao in
-     1) rm TREESSH; (crontab -l 2>/dev/null; echo "0 */4 * * * /sbin/reboot") | crontab -; echo "REINICIO A CADA 4HRs"; Menu;;
+     1) rm SSHSCRIPT; (crontab -l 2>/dev/null; echo "0 */4 * * * /sbin/reboot") | crontab -; echo "REINICIO A CADA 4HRs"; Menu;;
     2) Voltar ;;
     *) "Comando desconhecido" ; echo ; Opcao1 ;;
     esac
@@ -97,7 +97,7 @@ sshplus () {
     echo "                             "
     read opcao
     case $opcao in
-     1) rm TREESSH; apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus; Menu;;
+     1) rm SSHSCRIPT; apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus; Menu;;
     2) Voltar ;;
     *) "Comando desconhecido" ; echo ; Opcao1 ;;
     esac
@@ -105,19 +105,21 @@ sshplus () {
 
 painel-20 () {
     clear
-    echo -e " \033[01;32mInstalar PAINEL SSH 20 Free\033[01;37m"
+    echo -e " \033[01;32mInstalar PAINEL SSH Free (DEBIAN 8)\033[01;37m"
     echo -e " \033[01;32m--------------------------------\033[01;37m"
     echo "ESCOLHA ABAIXO"
     echo -e '\n'
-    echo -e "[ 1 ] \033[01;32mINICIAR INSTALACAO\033[01;37m"
-    echo "[ 2 ] Voltar"
+    echo -e "[ 1 ] \033[01;32mINICIAR INSTALACAO PAINEL WEB 20\033[01;37m"
+    echo -e "[ 2 ] \033[01;32mINICIAR INSTALACAO PAINEL WEB 20\033[01;37m"
+    echo "[ 3 ] Voltar"
       echo -e '\n'
     echo "ESCOLHA UMA OPÇÃO! "
     echo "                             "
     read opcao
     case $opcao in
-     1) rm TREESSH; apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v20/install; chmod +x install; ./install; Menu;;
-    2) Voltar ;;
+     1) rm SSHSCRIPT; apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v20/install; chmod +x install; ./install; Menu;;
+     2) rm SSHSCRIPT; apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/Panelweb.sh; chmod +x Panelweb.sh; ./Panelweb.sh; Menu;;
+    3) Voltar ;;
     *) "Comando desconhecido" ; echo ; Opcao1 ;;
     esac
 }
@@ -129,7 +131,7 @@ Voltar() {
 
 Sair() {
     clear
-    rm TREESSH; Menu
+    rm SSHSCRIPT; Menu
 }
 clear
 Menu
