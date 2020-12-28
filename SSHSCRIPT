@@ -26,21 +26,21 @@ Menu() {
     echo "                             "
     read opcao
     case $opcao in
-    1) rm TREESSH; painel-20;;
+    1) rm SSHSCRIPT; painel-20;;
     
-    2) rm TREESSH; sshplus;;
+    2) rm SSHSCRIPT; sshplus;;
 
-    3) rm TREESSH; apache2;;
+    3) rm SSHSCRIPT; apache2;;
     
-    4) rm TREESSH; rm inst; wget http://sshplus.xyz/revenda/confpainel/inst > /dev/null 2>&1; bash inst; Menu;;
+    4) rm SSHSCRIPT; rm inst; wget http://sshplus.xyz/revenda/confpainel/inst > /dev/null 2>&1; bash inst; Menu;;
     
-    5) rm TREESSH; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/tcptweaker.sh; chmod +x tcptweaker.sh; ./tcptweaker.sh; Menu;;
+    5) rm SSHSCRIPT; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/tcptweaker.sh; chmod +x tcptweaker.sh; ./tcptweaker.sh; Menu;;
     
-    6) rm TREESSH; reini;;
+    6) rm SSHSCRIPT; reini;;
     
-    7) rm TREESSH; apt-get autoclean; apt-get autoremove; Menu;;
+    7) rm SSHSCRIPT; apt-get autoclean; apt-get autoremove; Menu;;
     
-    0) rm TREESSH; exit;;
+    0) rm SSHSCRIPT; exit;;
     *) "Comando desconhecido" ; echo ; Menu;;
     esac
     }
