@@ -110,7 +110,7 @@ painel-20 () {
     echo "ESCOLHA ABAIXO"
     echo -e '\n'
     echo -e "[ 1 ] \033[01;32mINICIAR INSTALACAO PAINEL WEB 20\033[01;37m"
-    echo -e "[ 2 ] \033[01;32mINICIAR INSTALACAO VERSOES ALTERNATIVAS PAINEL WEB\033[01;37m"
+    echo -e "[ 2 ] \033[01;32mINICIAR INSTALACAO DE VERSOES ALTERNATIVAS DO PAINEL WEB\033[01;37m"
     echo "[ 3 ] Voltar"
       echo -e '\n'
     echo "ESCOLHA UMA OPÇÃO! "
